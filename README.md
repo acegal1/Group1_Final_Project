@@ -3,9 +3,9 @@
 # Group 1 Selected Topic: UFO Sightings in Arizona 
 
 ## Group 1 Team Members: 
-- Connie Aceves (Circle)
-- Angelica Rosario (Square)
-- Jordan Peterson (Triangle)
+- Connie Aceves (Square)
+- Angelica Rosario (Triangle)
+- Jordan Peterson (Circle)
 - Katie Bernstein (X)
 
 # Team Communication Protocols
@@ -26,7 +26,7 @@ Data Source: https://www.kaggle.com/datasets/sadeghjalalian/ufo-sightings-in-usa
 
 About Dataset:
 
-Full text and geocoded UFO sighting reports from the National UFO Research Center (NUFORC). The National UFO Research Center (NUFORC) collects and serves over 100,000 reports of UFO sightings. This dataset contains the report content itself including the time, location duration, and other attributes in both the raw form as it is recorded on the NUFORC site as well as a refined, standardized form that also contains lat/lon coordinates. (kaggle.com)
+Full text and geocoded UFO sighting reports from the National UFO Research Center (NUFORC). The National UFO Research Center (NUFORC) collects and serves over 100,000 reports of UFO sightings. This dataset contains the report content itself including the time, location duration, and other attributes in both the raw form as it is recorded on the NUFORC site as well as a refined, standardized form that also contains lat/lon coordinates. (source: kaggle.com)
 
 ### Data Cleaning (Extract, Transform, Load):
 - Python and Jupyter Notebook used to clean the dataset 
