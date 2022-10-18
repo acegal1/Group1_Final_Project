@@ -35,7 +35,7 @@ Full text and geocoded UFO sighting reports from the National UFO Research Cente
 
 ### Database
 - PGAdmin used to create the database tables from the clean dataset
-- QuickDBA used for creating the Entity Relationship Diagrams (ERD) for our database
+- QuickDBA used for creating the Entity Relationship Diagrams (ERD) for our logistical relatiobship diagram of our database.
 
 ### Presentation
 - Tableau will be used for visualizations and put into presentation slides
