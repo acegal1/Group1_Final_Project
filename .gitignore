@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+nuforc_reports.csv
+ufo_data_cleaned4.csv
