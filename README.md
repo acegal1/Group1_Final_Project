@@ -32,6 +32,7 @@ Full text and geocoded UFO sighting reports from the National UFO Research Cente
 - Python and Jupyter Notebook used to clean the dataset 
 
 ### Machine Learning Model 
+- Unsupervised K-means Clustering 
 
 ### Database
 - PGAdmin used to create the database tables from the clean dataset
@@ -40,3 +41,6 @@ Full text and geocoded UFO sighting reports from the National UFO Research Cente
 ### Presentation
 - Tableau will be used for visualizations and put into presentation slides
 - Google Slides for presentation slides
+
+### ERD
+![UFO AZ ERD](https://github.com/acegal1/Group1_Final_Project/blob/main/images/UFO_AZ_ERD.png)
