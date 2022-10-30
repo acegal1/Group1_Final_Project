@@ -1,0 +1,34 @@
+--Creating table for UFO raw data file
+CREATE TABLE ufos_rawtable1 (
+	index INT NOT Null,
+	summary VARCHAR, 
+	city VARCHAR, 
+	state VARCHAR,
+	shape VARCHAR,
+	duration VARCHAR, 
+	stats VARCHAR,
+	text VARCHAR, 
+	posted TIMESTAMP,
+	city_latitude VARCHAR,
+	city_longitude VARCHAR,
+	date_str DATE,
+	time_str TIME,
+	PRIMARY KEY (index)
+);
+
+--Create table with clean city names
+CREATE TABLE city_names (
+	city_raw VARCHAR,
+	city_corrected VARCHAR
+);
+
+--Create City Population YOY
+CREATE TABLE city_population_yoy (
+	City VARCHAR,
+	State VARCHAR,
+	YEAR VARCHAR,
+	POPULATION VARCHAR,
+	DATE DATE
+);
+
+	
