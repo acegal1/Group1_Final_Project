@@ -13,6 +13,7 @@ Clean_City_PopulationGrowth.csv
 ufo_population_az_df.csv
 ufo_data_az_df.csv
 ufo_data_cleaned4.csv
+config.py
 
 # C extensions
 *.so
