@@ -31,4 +31,34 @@ CREATE TABLE city_population_yoy (
 	DATE DATE
 );
 
+SELECT * FROM ufos_rawtable1
+
+SELECT * FROM city_names
+
+SELECT * FROM city_population_yoy
+
+SELECT * FROM ufo_az_clean1
+
+SELECT city, year, population
+INTO clean_population
+FROM city_population_yoy
+
+
+--joining clean_population and ufo_az_clean1
+SELECT uf.date_time,
+	uf.summary,
+    uf.city,
+	uf.state,
+	uf.shape,
+	uf.duration, 
+	uf.year,
+    cp.population
+INTO ufo_population
+FROM ufo_az_clean1 as uf
+INNER JOIN clean_population as cp
+	ON (uf.city = cp.city) AND (uf.year = cp.year);
+
+
+SELECT * FROM ufo_population
+
 	
