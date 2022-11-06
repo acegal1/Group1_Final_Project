@@ -17,7 +17,7 @@ Arizona is one of the top tourist destinations in the world for UFO sightings du
 
 ## Data Questions
 * Does the amount of UFO sightings in Arizona increase at a similar rate as the population growth in Arizona cities?
-* 
+
 ***
 
 # **Project Outline:** 
@@ -48,8 +48,17 @@ SQL Database ERD (Entity Relationship Diagram)
 
 ### Machine Learning Model 
 We evaluated our data using the following models:
-- Unsupervised K-means Clustering
--  (Screenshots of graphs)
+- Unsupervised K-means Clustering - we used this method because we had to convert all the labels to numbers 
+- Google Colab - PySpark with Pandas
+- SK Learn Module - Clustering
+- ![Clustering](/images/UFO_3D_Clustering.png)
+- Plotly
+- ![plot](/images/UFO_Elbow.png)
+- Matplotlib
+- ![matplotlib](/images/UFO_Clusters.png)
+- HV Plot
+- ![plot](/images/UFO_Scaled.png)
+
 
 
 ### Presentation
@@ -57,3 +66,12 @@ We evaluated our data using the following models:
 Link to Presentation Slides
 
 Power BI Slides
+
+### Future Analysis and Recommendations
+__National UFO Reporting Center Recommendations:__
+- Less free form answers – more drop down options to reduce the amount of non-sense data or variability in the data. 
+- Sighting Validation – new column or area of data where NUFORC can add their feedback that either approves or denies the sightings. Currently it is listed in the comment box. 
+
+__Additional Datasets to include:__
+- Weather Patterns
+- Locations of Government Testing Sites, Military Bases and other business locations that might effect the data.
