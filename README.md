@@ -49,13 +49,16 @@ SQL Database ERD (Entity Relationship Diagram)
 ### Machine Learning Model 
 We evaluated our data using the following models:
 - Unsupervised K-means Clustering - we used this method because we had to convert all the labels to numbers 
-- Google Colab - PySpark
-- SK Learn Module
+- Google Colab - PySpark with Pandas
+- SK Learn Module - Clustering
+- ![Clustering](/images/UFO_3D_Clustering.png)
 - Plotly
+- ![plot](/images/UFO_Elbow.png)
 - Matplotlib
+- ![matplotlib](/images/UFO_Clusters.png)
 - HV Plot
-- (Screenshots of graphs)
-- Katie, here is the list of libraries that were imported: pandas, sklearn, sklearn cluster (for the KMeans), matplotlib, plotly. We used Google Colab pyspark for our pandas dataframe
+- ![plot](/images/UFO_Scaled.png)
+
 
 
 ### Presentation
@@ -63,3 +66,12 @@ We evaluated our data using the following models:
 Link to Presentation Slides
 
 Power BI Slides
+
+### Future Analysis and Recommendations
+__National UFO Reporting Center Recommendations:__
+- Less free form answers – more drop down options to reduce the amount of non-sense data or variability in the data. 
+- Sighting Validation – new column or area of data where NUFORC can add their feedback that either approves or denies the sightings. Currently it is listed in the comment box. 
+
+__Additional Datasets to include:__
+- Weather Patterns
+- Locations of Government Testing Sites, Military Bases and other business locations that might effect the data.
