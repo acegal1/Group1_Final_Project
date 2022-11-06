@@ -17,7 +17,7 @@ Arizona is one of the top tourist destinations in the world for UFO sightings du
 
 ## Data Questions
 * Does the amount of UFO sightings in Arizona increase at a similar rate as the population growth in Arizona cities?
-* 
+
 ***
 
 # **Project Outline:** 
@@ -48,8 +48,14 @@ SQL Database ERD (Entity Relationship Diagram)
 
 ### Machine Learning Model 
 We evaluated our data using the following models:
-- Unsupervised K-means Clustering
--  (Screenshots of graphs)
+- Unsupervised K-means Clustering - we used this method because we had to convert all the labels to numbers 
+- Google Colab - PySpark
+- SK Learn Module
+- Plotly
+- Matplotlib
+- HV Plot
+- (Screenshots of graphs)
+- Katie, here is the list of libraries that were imported: pandas, sklearn, sklearn cluster (for the KMeans), matplotlib, plotly. We used Google Colab pyspark for our pandas dataframe
 
 
 ### Presentation
