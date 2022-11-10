@@ -13,7 +13,7 @@
 This respository includes the dataset, source code, images and other relevants documents for the Arizona UFO Sightings and Predictions project.
 
 ## Topic Rationale
-Arizona is one of the top tourist destinations in the world for UFO sightings due to the high number of sightings over the last 50 years - totalling over 4600 sightings. As residents of Arizona, we selected this topic as a fun and interesting way to show the data visualization, machine learning, database and other data analytic skills we have learned throughout the bootcamp.
+Arizona is one of the top tourist destinations in the world for UFO sightings due to the high number of sightings over the last 50 years - totalling over 4600 sightings. As residents of Arizona, we selected this topic as a fun and interesting way to show the data visualization, machine learning, database and other data analytic skills we have learned throughout the bootcamp as well as explore a topic that pertains to our home state.
 
 ## Data Questions
 * Does the amount of UFO sightings in Arizona increase at a similar rate as the population growth in Arizona cities?
@@ -37,7 +37,25 @@ United States Census data was utilized to determine proper city naming conventio
 
 
 ### Data Cleaning (Extract, Transform, Load):
-- The raw kaggle dataset was initally loaded into a jupyter notebook in Python
+Steps for Preparing Data
+
+Preprocessing the UFO dataset to manage unnecessary columns, rows with null values, and mixed data types before using algorithms.
+- Data selection entails making good choices about which data will be used. Consider what data is available, what data is missing, and what data can be removed.
+- Data processing involves organizing the data by formatting, cleaning, and sampling it. In the UFO dataset the cities names had numerous misspellings. 
+- Data transformation entailed loading csv files into python and processed so it could be exported to be used in analysis. 
+
+UFO dataset loaded into pandas dataframe: 
+(pandas image 1)
+
+Pandas dataframe filtered for the state of Arizona:
+(pandas image 2)
+
+Pandas loading Arizona city names to correct misspellings, left merge by city. (pandas image 3)
+
+Pandas loaded Arizona population for the years 2000 to 2021 with merge on left and right keys.  (image 4)
+
+Data transformation entailed loading csv files into python and processed so it could be exported to be used in analysis. (image 5)
+***
 
 ### Database
 - Utilizing the Kaggle and population datasets, the data was loaded into a SQL database in PGAdmin and then exported into Python to be cleaned utilizing the ETL code created and then exported back into SQL. After the clean data for Arizona was imported back into SQL, the clean data table was then joined with the clean population table which held the Arizona cities and population data from the year 2000 to 2022. The table created can then be utilized to run the machine learning models. 
@@ -45,11 +63,17 @@ United States Census data was utilized to determine proper city naming conventio
 
 SQL Database ERD (Entity Relationship Diagram)
 ![UFO AZ ERD](/images/UFO%20Final%20Project%20ERD%20Chart.png)
+***
 
 ### Machine Learning Model 
 We evaluated our data using the following models:
 - Unsupervised K-means Clustering - we used this method because we had to convert all the labels to numbers 
-- Google Colab - PySpark with Pandas
+- The 3D-Cluster model supports our hypothesis:
+    Cities with larger populations have more sightings throughout a given year.
+- We performed K-Means Clustering to determine the optimal number of clusters to test our dataset.
+- Based on our ML unsupervised model, our elbow curve is around the 3 mark. 
+       K=3 meaning 3 clusters would be best.
+
 - SK Learn Module - Clustering
 - ![Clustering](/images/UFO_3D_Clustering.png)
 - Plotly
@@ -58,20 +82,41 @@ We evaluated our data using the following models:
 - ![matplotlib](/images/UFO_Clusters.png)
 - HV Plot
 - ![plot](/images/UFO_Scaled.png)
+***
+
+### Presentation Link
+(screenshot)/Link
+
+### Power BI Link
+
+***
+### __Future Analysis Recommendations__
+
+- Deeper Analysis on States that indicates what time of year & day UFO Sightings may occur, based on climate
+- UFO Sighting characteristics by Country 
+- How Economic variables & Pandemics, affect volume of Sightings
 
 
+__National UFO Reporting Center Recommendations:__ 
+    - Less free form answers – more drop down options to reduce the amount of non-sense data or variability in the data. 
+    - Sighting Validation – new column or area of data where NUFORC can add their feedback that either approves or denies the sightings. Currently it is listed in the comment box. 
 
-### Presentation
+- Additional Datasets to include:
+    - Weather Patterns
+    - Locations of Government Testing Sites, Military Bases and other business locations that might effect the data.
 
-Link to Presentation Slides
-
-Power BI Slides
-
-### Future Analysis and Recommendations
-__National UFO Reporting Center Recommendations:__
-- Less free form answers – more drop down options to reduce the amount of non-sense data or variability in the data. 
-- Sighting Validation – new column or area of data where NUFORC can add their feedback that either approves or denies the sightings. Currently it is listed in the comment box. 
 
 __Additional Datasets to include:__
 - Weather Patterns
 - Locations of Government Testing Sites, Military Bases and other business locations that might effect the data.
+
+### __Lessons Learned__
+- Select a dataset that has less free form data fields
+    - More conclusive results with machine learning models
+- Fully understand the Frequency & Accuracy of the Organization’s Auditing Process 
+    - When did this Auditing Process Begin?
+    - Does everyone Audit with the Same Method? 
+- There are numerous ways that city & town data can be aggregated – Not all sources go down to the same level of detail or use the same names
+    EXAMPLES:  
+    - Pinetop-Lakeside vs. Pinetop & Lakeside separately
+    - Sightings in National Forests (no population)
