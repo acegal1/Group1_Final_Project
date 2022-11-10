@@ -98,8 +98,8 @@ We evaluated our data using the following models:
 
 
 __National UFO Reporting Center Recommendations:__ 
-    - Less free form answers – more drop down options to reduce the amount of non-sense data or variability in the data. 
-    - Sighting Validation – new column or area of data where NUFORC can add their feedback that either approves or denies the sightings. Currently it is listed in the comment box. 
+- Less free form answers – more drop down options to reduce the amount of non-sense data or variability in the data. 
+- Sighting Validation – new column or area of data where NUFORC can add their feedback that either approves or denies the sightings. Currently it is listed in the comment box. 
 
 - Additional Datasets to include:
     - Weather Patterns
@@ -120,3 +120,23 @@ __Additional Datasets to include:__
     EXAMPLES:  
     - Pinetop-Lakeside vs. Pinetop & Lakeside separately
     - Sightings in National Forests (no population)
+***
+
+### __Technologies Used__
+- Dataset ETL/ERD: 
+    - Python
+    - Jupyter Notebook
+    - Power Query
+- Machine Learning Model: 
+    - Google Colab – PySpark
+    - Pandas
+    - SKLearn Cluster
+    - Plotly
+    - Matplotlib
+    - HV Plot
+- Database Creation
+    - PGAdmin: Creating tables and joining tables
+    - SQL Alchemy: Connection String to Python
+    - QuickDBA: ERD Creation
+- Data Visualization
+    - Power BI
