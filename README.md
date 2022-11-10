@@ -57,6 +57,7 @@ Pandas loaded Arizona population for the years 2000 to 2021 with merge on left a
 ![pandas 4](/images/Panda4.png)
 
 Data transformation entailed loading csv files into python and processed so it could be exported to be used in analysis.
+
 ![pandas 5](/images/Panda5.png)
 
 ***
