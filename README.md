@@ -10,7 +10,7 @@
 ***
 
 # **Overview**
-This respository includes the dataset, source code, images and other relevants documents for the Arizona UFO Sightings and Predictions project.
+This respository includes the dataset, source code, images and other relevant documents for the Arizona UFO Sightings and Predictions project.
 
 ## Topic Rationale
 Arizona is one of the top tourist destinations in the world for UFO sightings due to the high number of sightings over the last 50 years - totalling over 4600 sightings. As residents of Arizona, we selected this topic as a fun and interesting way to show the data visualization, machine learning, database and other data analytic skills we have learned throughout the bootcamp as well as explore a topic that pertains to our home state.
@@ -22,7 +22,7 @@ Arizona is one of the top tourist destinations in the world for UFO sightings du
 
 # **Project Outline:** 
 
-## Datasets
+## __Datasets__
 
 __UFO Sightings Data Source:__ https://www.kaggle.com/datasets/sadeghjalalian/ufo-sightings-in-usa
 
@@ -36,7 +36,7 @@ United States Census data was utilized to determine proper city naming conventio
 ***
 
 
-### Data Cleaning (Extract, Transform, Load):
+## __Data Cleaning (Extract, Transform, Load):__
 Steps for Preparing Data
 
 Preprocessing the UFO dataset to manage unnecessary columns, rows with null values, and mixed data types before using algorithms.
@@ -45,19 +45,23 @@ Preprocessing the UFO dataset to manage unnecessary columns, rows with null valu
 - Data transformation entailed loading csv files into python and processed so it could be exported to be used in analysis. 
 
 UFO dataset loaded into pandas dataframe: 
-(pandas image 1)
+![pandas 1](/images/Panda1.png)
 
 Pandas dataframe filtered for the state of Arizona:
-(pandas image 2)
+![pandas 2](/images/Panda2.png)
 
-Pandas loading Arizona city names to correct misspellings, left merge by city. (pandas image 3)
+Pandas loading Arizona city names to correct misspellings, left merge by city.
+![pandas 3](/images/Panda3.png)
 
-Pandas loaded Arizona population for the years 2000 to 2021 with merge on left and right keys.  (image 4)
+Pandas loaded Arizona population for the years 2000 to 2021 with merge on left and right keys.
+![pandas 4](/images/Panda4.png)
 
-Data transformation entailed loading csv files into python and processed so it could be exported to be used in analysis. (image 5)
+Data transformation entailed loading csv files into python and processed so it could be exported to be used in analysis.
+![pandas 5](/images/Panda5.png)
+
 ***
 
-### Database
+## __Database__
 - Utilizing the Kaggle and population datasets, the data was loaded into a SQL database in PGAdmin and then exported into Python to be cleaned utilizing the ETL code created and then exported back into SQL. After the clean data for Arizona was imported back into SQL, the clean data table was then joined with the clean population table which held the Arizona cities and population data from the year 2000 to 2022. The table created can then be utilized to run the machine learning models. 
 - We utilized a local instance of PGAdmin and a connection string using SQLAlchemy to connect to Python to demonstrate our team's database knowledge. Amazon Web Services (AWS) could be utilized for this process to hold the raw data files and the database and a connection string using SQLAlchemy to connect to Python/Google Colab for all team members to connect remotely and the provide the link to others outside the team as a longer term solution. 
 
@@ -65,7 +69,7 @@ SQL Database ERD (Entity Relationship Diagram)
 ![UFO AZ ERD](/images/UFO%20Final%20Project%20ERD%20Chart.png)
 ***
 
-### Machine Learning Model 
+## Machine Learning Model 
 We evaluated our data using the following models:
 - Unsupervised K-means Clustering - we used this method because we had to convert all the labels to numbers 
 - The 3D-Cluster model supports our hypothesis:
@@ -84,10 +88,14 @@ We evaluated our data using the following models:
 - ![plot](/images/UFO_Scaled.png)
 ***
 
-### Presentation Link
-(screenshot)/Link
+## __Power BI Dashboard__
+An interactive dashboard was created in Power BI that included all of our data for sightings in the US as well as drilled down to just the Arizona sightings.
 
-### Power BI Link
+UFO SIGHTINGS IN US 
+![us dashboard](/images/UFO%20Sightings%20in%20the%20US.png)
+
+UFO SIGHTINGS IN ARIZONA
+![arizona dashboard](/images/Arizona%20UFO%20Dashboard.png)
 
 ***
 ### __Future Analysis Recommendations__
@@ -104,11 +112,7 @@ __National UFO Reporting Center Recommendations:__
 - Additional Datasets to include:
     - Weather Patterns
     - Locations of Government Testing Sites, Military Bases and other business locations that might effect the data.
-
-
-__Additional Datasets to include:__
-- Weather Patterns
-- Locations of Government Testing Sites, Military Bases and other business locations that might effect the data.
+***
 
 ### __Lessons Learned__
 - Select a dataset that has less free form data fields
@@ -140,3 +144,10 @@ __Additional Datasets to include:__
     - QuickDBA: ERD Creation
 - Data Visualization
     - Power BI
+***
+## Presentation
+![presentation slide](/images/Presentation%20Slide.png)
+***
+# **Conclusion**
+![conclusion](/images/Conclusion%20Slide.png)
+***
