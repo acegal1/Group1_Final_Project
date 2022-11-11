@@ -45,15 +45,19 @@ Preprocessing the UFO dataset to manage unnecessary columns, rows with null valu
 - Data transformation entailed loading csv files into python and processed so it could be exported to be used in analysis. 
 
 UFO dataset loaded into pandas dataframe: 
+
 ![pandas 1](/images/Panda1.png)
 
 Pandas dataframe filtered for the state of Arizona:
+
 ![pandas 2](/images/Panda2.png)
 
 Pandas loading Arizona city names to correct misspellings, left merge by city.
+
 ![pandas 3](/images/Panda3.png)
 
 Pandas loaded Arizona population for the years 2000 to 2021 with merge on left and right keys.
+
 ![pandas 4](/images/Panda4.png)
 
 Data transformation entailed loading csv files into python and processed so it could be exported to be used in analysis.
@@ -146,6 +150,11 @@ __National UFO Reporting Center Recommendations:__
 - Data Visualization
     - Power BI
 ***
+
+## Power BI Link
+https://app.powerbi.com/view?r=eyJrIjoiYTExM2MzZDEtMGY5OC00MzE4LWI5YTAtMGFmM2U0MTExZTFhIiwidCI6ImYzMTc2MmExLTM2NjMtNDViMi1iMTk4LTU1MDdjNGNlNGY2MCIsImMiOjZ9
+***
+
 ## Presentation
 ![presentation slide](/images/Presentation%20Slide.png)
 ***
